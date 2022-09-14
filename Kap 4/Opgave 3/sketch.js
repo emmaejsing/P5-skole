@@ -49,9 +49,4 @@ function draw() {
   circle(x,y,10);
   circle(circleX,circleY,25);
   rect(rectX,rectY,25,25);
-
-  if(distance_circle<25/2+10/2){
-    x+=100;
-  }
 }
-
