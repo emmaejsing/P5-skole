@@ -68,6 +68,8 @@ function draw() {
   if (catX - d / 2 <= 0) {
     catA = random(1, 5);
     catB = random(1, 5);
+    catA = catA * 2;
+    catB = catB * 2;
   }
   if (catX + d / 2 >= windowWidth) {
     catA = -random(1, 5);
@@ -83,7 +85,8 @@ function draw() {
   }
   distance = sqrt((x - catX) ** 2 + (y - catY) ** 2);
   if (distance <= d) {
-    fill(255, 0, 0);
+    x = random(0, windowWidth);
+    y = random(0, windowHeight);
   }
   rect(CatX, CatY, d);
   CatX += CatA;
@@ -91,6 +94,8 @@ function draw() {
   if (CatX - d / 2 <= 0) {
     CatA = random(1, 5);
     CatB = random(1, 5);
+    CatA = CatA * 2;
+    CatB = CatB * 2;
   }
   if (CatX + d / 2 >= windowWidth) {
     CatA = -random(1, 5);
@@ -106,7 +111,8 @@ function draw() {
   }
   Distance = sqrt((x - CatX) ** 2 + (y - CatY) ** 2);
   if (Distance <= d) {
-    fill(255, 0, 0);
+    x = random(0, windowWidth);
+    y = random(0, windowHeight);
   }
 }
 

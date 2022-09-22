@@ -61,6 +61,39 @@ function setup() {
 function draw() {
   background(220);
   fill(255, 255, 0);
+  if (mouseIsPressed == true) {
+    if (mouseX >= 10) {
+      if (mouseX <= 90) {
+        if (mouseY >= 10) {
+          if (mouseY <= 90) {
+            fill(255, 0, 0);
+          }
+        }
+      }
+    }
+  }
+  if (mouseIsPressed == true) {
+    if (mouseX >= 110) {
+      if (mouseX <= 190) {
+        if (mouseY >= 10) {
+          if (mouseY <= 90) {
+            fill(255, 0, 255);
+          }
+        }
+      }
+    }
+  }
+  if (mouseIsPressed == true) {
+    if (mouseX >= 60) {
+      if (mouseX <= 140) {
+        if (mouseY >= 110) {
+          if (mouseY <= 190) {
+            fill(255, 0, 255);
+          }
+        }
+      }
+    }
+  }
   circle(50, 50, 80);
   circle(150, 50, 80);
   circle(100, 150, 80);
